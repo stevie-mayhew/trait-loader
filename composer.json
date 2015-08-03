@@ -1,0 +1,24 @@
+{
+	"name": "stevie-mayhew/trait-loader",
+	"type": "silverstripe-module",
+	"description": "Adds trait autoloading support to SilverStripe",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "traits", "autoload"],
+	"require": {
+		"php": ">=5.4",
+		"silverstripe/framework": "~3.1"
+	},
+	"authors": [
+		{
+			"name": "Simon Welsh",
+			"homepage": "http://coding.simon.geek.nz/",
+			"email": "simon@simon.geek.nz"
+		}
+	],
+	"homepage": "https://github.com/stevie-mayhew/trait-loader",
+	"support": {
+		"issues": "https://github.com/stevie-mayhew/issues",
+		"source": "https://github.com/stevie-mayhew/trait-loader/tree/master",
+		"irc": "irc://irc.freenode.org/#silverstripe"
+	}
+}
