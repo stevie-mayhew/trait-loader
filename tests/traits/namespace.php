@@ -2,8 +2,10 @@
 
 namespace sgn;
 
-trait TestTrait {
-	public function namespaceTest() {
-		return __NAMESPACE__;
-	}
+trait TestTrait
+{
+    public function namespaceTest()
+    {
+        return __NAMESPACE__;
+    }
 }
