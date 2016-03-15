@@ -32,7 +32,11 @@ class TraitManifest extends \SS_ClassManifest {
 		$this->cacheKey = 'traits';
 
 		if (!$forceRegen && $data = $this->cache->load($this->cacheKey)) {
-			$this->traits = $data['traits'];
+			if (!empty($data['traits'])) {
+                $this->traits = $data['traits'];
+            } else {
+                $this->regenerateTrait(true);
+            }
 		} else {
 			$this->regenerateTrait(true);
 		}
@@ -100,7 +104,7 @@ class TraitManifest extends \SS_ClassManifest {
 
 		if (!$traits) {
 			$tokens = token_get_all($file);
-			
+
 			$namespace = self::get_namespace_parser()->findAll($tokens);
 			if($namespace) {
 				$namespace = implode('', $namespace[0]['namespaceName']) . '\\';
