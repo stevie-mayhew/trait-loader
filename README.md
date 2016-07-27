@@ -11,7 +11,7 @@ This module adds in support for autoloading [traits](http://php.net/trait) to Si
 
 ### Composer
 
- * `composer require stevie-mayhew/trait-loader dev-master`
+ * `composer require stevie-mayhew/trait-loader`
  * Visit `http://your-site.com/?flush=1`
 
 ## Manual installation
